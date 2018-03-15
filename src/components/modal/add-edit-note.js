@@ -116,7 +116,11 @@ export default class AddEditModal extends Component {
               className={`Button Action ${this.state.disabled ? 'Disabled' : ''}`}
               disabled={this.state.disabled}
               onClick={() => {
-                this.props.edit(this.state, this.props.targetid);
+                let newNote = Object.assign({}, this.state);
+                if (newNote.color === '') {
+                  newNote.color = 'Red';
+                }
+                this.props.edit(newNote, this.props.targetid);
               }}
             >
               Save

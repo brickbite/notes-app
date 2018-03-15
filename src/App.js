@@ -71,9 +71,14 @@ class App extends Component {
         }
       }
     }
+    
+    this.editNote = this.editNote.bind(this);
+    this.deleteNote = this.deleteNote.bind(this);
+    this.changeAction = this.changeAction.bind(this);
   }
 
-  editNote = (newNote, id = null) => {
+
+  editNote(newNote, id = null) {
     if (id === null) {
       id = '';
       const chars = '23456789abdegjkmnpqrvwxyz';
@@ -90,13 +95,13 @@ class App extends Component {
     this.setState({notes: newNotes}, this.changeAction(null, null));
   }
 
-  deleteNote = (id) => {
+  deleteNote(id) {
     const newNotes = this.state.notes;
     delete newNotes[id];
     this.setState({notes: newNotes}, this.changeAction(null, null));
   }
 
-  changeAction = (act, target) => {
+  changeAction(act, target) {
     this.setState({action: act, targetNote: target});
   }
 
