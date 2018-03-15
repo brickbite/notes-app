@@ -1,4 +1,4 @@
-# name-to-be-updated
+# note-app
 
 ## Features:
 - Add a note

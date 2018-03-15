@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 import './app.css';
 
-import Header from './components/header/header.js';
-import Note from './components/note/note.js';
-import AddEditModal from './components/modal/add-edit-note.js';
-import DeleteModal from './components/modal/delete-note-confirmation.js';
+import Header from './components/header/header';
+import Note from './components/note/note';
+import AddEditModal from './components/modal/add-edit-note';
+import DeleteModal from './components/modal/delete-note-confirmation';
 
 class App extends Component {
 
