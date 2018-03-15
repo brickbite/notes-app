@@ -1,4 +1,4 @@
-# note-app
+# notes-app
 
 ## Features:
 - Add a note
