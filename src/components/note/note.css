@@ -1,0 +1,82 @@
+.Note {
+  background-color: rgb(235, 235, 235);
+  border: solid .5px rgb(185, 185, 185);
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: 2px 2px rgb(141, 141, 141);
+}
+
+.Note-Content {
+  min-height: 100px;
+  max-height: 100px;
+  text-align: left;
+  margin: .25em;
+  word-wrap: break-word;
+  overflow: scroll;
+}
+
+.Note-Header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(235, 235, 235);
+  margin: .25em;
+  border-bottom: 1px solid grey;
+  text-align: left;
+}
+
+.Note-Header-Title {
+  text-align: center;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.Note-Header-Action-Container {
+  display: flex;
+  border: none;
+}
+
+.Note-Header-Action {
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.Icon {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.Note-Header-Action:hover {
+  background-color: rgb(87, 87, 87);
+}
+
+.Icon:hover {
+  background-color: rgb(87, 87, 87);
+}
+
+.Red {
+  background-color: rgb(207, 131, 131);
+  min-height: .3em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.Green {
+  background-color: rgb(128, 207, 128);
+  min-height: .3em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.Yellow {
+  background-color: rgb(209, 209, 127);
+  min-height: .3em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.Blue {
+  background-color: rgb(105, 105, 211);
+  min-height: .3em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}

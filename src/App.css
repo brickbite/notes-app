@@ -1,28 +1,42 @@
 .App {
-  text-align: center;
+  background-color: rgb(241, 241, 241)
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
+.App-Header-Container {
+  display: flex;
+  justify-content: flex-end;
   background-color: #222;
-  height: 150px;
+  height: 20px;
   padding: 20px;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.App-Entries {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
 }
 
-.App-intro {
-  font-size: large;
+.Button {
+  border: solid .01em black;
+  border-radius: 3px;
+  padding: 10px;
+  min-width: 6em;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.Cancel {
+  background-color: rgb(225, 225, 225);
+}
+
+.Delete {
+  background-color: rgb(223, 87, 87);
+}
+
+.Action {
+  background-color: rgb(96, 205, 209);
+}
+
+.Disabled {
+  background-color: rgb(225, 225, 225);
+  opacity: 0.7;
+  cursor: not-allowed;
 }

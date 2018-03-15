@@ -1,11 +1,17 @@
 
-export default class Header {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
+import React from 'react';
 
-  componentDidMount() {
-    console.log('Header mounted');
-  }
-}
+const Header = (props) => {
+  return (
+    <div>
+      <button
+        className="Button Action"
+        onClick={() => {
+          props.add('add', null)}
+        }
+      >+ Add Note</button>
+    </div>
+  )
+};
+
+export default Header;
